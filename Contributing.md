@@ -13,21 +13,17 @@ Once you've ripped your jingles from your ROMs, please rename them in a reasonab
 Then, move your jingles into `jingles/n3ds`, and edit the `index.json` in the root of the repository accordingly, adding a new entry in the json with this format:
 
 ```
-    {
-      "game": "*game name as it appears in cocoon*",
-      "file": "jingles/n3ds/*your jingle here*.wav"
-    },
+    { "game": "*game name as it appears in cocoon*", "file": "jingles/n3ds/*your jingle here*.wav"},
 ```
 
 For example,
 
 ```
-    {
-      "game": "Animal Crossing - New Leaf",
-      "file": "jingles/n3ds/animal-crossing-new-leaf.wav"
-    },
+    {"game": "Animal Crossing - New Leaf", "file": "jingles/n3ds/animal-crossing-new-leaf.wav"},
 ```
 
 It would be very much appreciated if you placed these in alphabetical order.
 
 Once that's done, open a pull request, and you're done!
+
+Don't know how to make a pull request, but still want to add jingles? Contact me on Discord at `red6785`! I'll probably accept!

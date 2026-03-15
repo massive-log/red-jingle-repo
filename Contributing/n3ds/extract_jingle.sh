@@ -1,6 +1,25 @@
 #!/bin/bash
 
 shopt -s nullglob
+
+if ! command -v 3dstool >/dev/null 2>&1
+then
+    echo "3dstool could not be found. Please install 3dstool to your PATH."
+    exit 1
+fi
+if ! command -v vgmstream-cli >/dev/null 2>&1
+then
+    echo "vgmstream-cli could not be found. Please install vgmstream-cli to your PATH."
+    exit 1
+fi
+if ! command -v python3 >/dev/null 2>&1
+then
+    echo "python3 could not be found. Please install python3 to your PATH."
+    exit 1
+fi
+
+mkdir -p jingles/n3ds
+
 for ROM in *.3ds *.cci; do
     echo "Processing $ROM..."
     OUTPUT="${ROM%.*}.wav"
@@ -23,7 +42,7 @@ with open('banner_dir/banner.bcwav','wb') as f:
     f.write(data[:size])
 "
 
-    vgmstream-cli banner_dir/banner.bcwav -o "$OUTPUT" > /dev/null
+    vgmstream-cli banner_dir/banner.bcwav -o "jingles/n3ds/$OUTPUT" > /dev/null
 
     rm -r partition0.cxi exefs.bin exefs_dir/ banner.bin banner_dir/
 
@@ -75,7 +94,7 @@ with open('banner_dir/banner.bcwav','wb') as f:
         print tolower(s) ext
     }')
 
-    [ "$FINAL" != "$OUTPUT" ] && mv -- "$OUTPUT" "$FINAL"
+    [ "$FINAL" != "$OUTPUT" ] && mv -- "jingles/n3ds/$OUTPUT" "jingles/n3ds/$FINAL"
 
     echo "Saved: $FINAL"
 done

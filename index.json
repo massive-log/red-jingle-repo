@@ -22,6 +22,32 @@
       "file": "jingles/gba/pokemon-fire-red.wav"
     }
   ],
+  "switch": [
+    {
+      "name": "Pokemon Legends Z-A",
+      "file": "jingles/switch/pokemon-za.wav"
+    },
+    {
+      "name": "Pokemon Legends Arceus",
+      "file": "jingles/switch/pokemon-arceus.wav"
+    },
+    {
+      "name": "Pokemon Brilliant Diamond",
+      "file": "jingles/switch/pokemon-bdsp.wav"
+    },
+    {
+      "name": "Pokemon Shining Pearl",
+      "file": "jingles/switch/pokemon-bdsp.wav"
+    },
+    {
+      "name": "Pokemon Sword",
+      "file": "jingles/switch/pokemon-swsh.wav"
+    },
+    {
+      "name": "Pokemon Shield",
+      "file": "jingles/switch/pokemon-swsh.wav"
+    }
+  ],
   "ds": [
     {
       "name": "Pokemon - Black Version 2",
@@ -45,11 +71,19 @@
     },
     {
       "name": "Pokemon - Diamond Version",
-      "file": "jingles/nds/pokemon-platinum.wav"
+      "file": "jingles/nds/pokemon-dp.wav"
     },
     {
       "name": "Pokemon - Pearl Version",
-      "file": "jingles/nds/pokemon-platinum.wav"
+      "file": "jingles/nds/pokemon-dp.wav"
+    },
+     {
+      "name": "Pokemon - Black Version",
+      "file": "jingles/nds/pokemon-bw.wav"
+    },
+     {
+      "name": "Pokemon - White Version",
+      "file": "jingles/nds/pokemon-bw.wav"
     }
   ],
   "n3ds": [
